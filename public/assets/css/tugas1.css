@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    font-family: inter, sans-serif;
+}
+.hiddenBar {
+    width: 388px;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h1{
+    color: black;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 20px;
+}
+.container mt-5 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.link-tab {
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 64px;
+    font-size: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 44px;
+    padding-right: 44px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(67, 230, 96);
+    transition: transform 0.3s cubic-bezier(0, 0.2, 0.5, 1);
+    border-radius: 14px;
+}
+
+.link-tab:hover {
+    transform: scale(1.05);
+    background-color: rgb(57, 200, 80);
+}
