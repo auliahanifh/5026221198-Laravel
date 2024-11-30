@@ -69,3 +69,7 @@ Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiDBController@edit')
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiDBController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiDBController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
+
+Route::get('/bagian', 'App\Http\Controllers\BagianController@index_bagian');
+Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@tambah_bagian');
+Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@store_bagian');
