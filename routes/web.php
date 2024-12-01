@@ -72,4 +72,4 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
 
 Route::get('/bagian', 'App\Http\Controllers\BagianController@index_bagian');
 Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@tambah_bagian');
-Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@store_bagian');
+Route::get('/bagian/store', 'App\Http\Controllers\BagianController@store_bagian');
