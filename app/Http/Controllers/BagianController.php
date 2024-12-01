@@ -21,10 +21,39 @@ class BagianController extends Controller
         DB::table('bagian')->insert([
             'kodebagian' => $request->kode,
             'namabagian' => $request->nama,
-            'pjumlahbagian' => $request->jumlah,
+            'jumlahbagian' => $request->jumlah,
             'tersedia' => $request->tersedia
         ]);
         return redirect('/bagian');
 
+    }
+
+    public function edit_bagian($kode) {
+        $bagian = DB::table('bagian')->where('kodebagian','=',$kode)->get();
+    return view('edit_bagian',['bagian' => $bagian]);
+    }
+
+    public function update_bagian(Request $request){
+        DB::table('bagian')->where('kodebagian',$request->kode)->update([
+            'kodebagian' => $request->kode,
+            'namabagian' => $request->nama,
+            'jumlahbagian' => $request->jumlah,
+            'tersedia' => $request->tersedia
+        ]);
+    return redirect('/bagian');
+    }
+    public function hapus_bagian($kode){
+        DB::table('bagian')->where('kodebagian',$kode)->delete();
+
+    return redirect('/bagian');
+    }
+
+    public function cari_bagian(Request $request){
+        $cari = $request->cari;
+        $bagian = DB::table('bagian')
+        ->where('namabagian','like',"%".$cari."%")
+        ->paginate();
+
+    return view('index_bagian',['bagian' => $bagian]);
     }
 }

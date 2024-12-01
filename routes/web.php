@@ -72,4 +72,8 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
 
 Route::get('/bagian', 'App\Http\Controllers\BagianController@index_bagian');
 Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@tambah_bagian');
-Route::get('/bagian/store', 'App\Http\Controllers\BagianController@store_bagian');
+Route::post('/bagian/store', 'App\Http\Controllers\BagianController@store_bagian');
+Route::get('/bagian/edit/{kode}', 'App\Http\Controllers\BagianController@edit_bagian');
+Route::post('/bagian/update', 'App\Http\Controllers\BagianController@update_bagian');
+Route::get('/bagian/hapus/{kode}','App\Http\Controllers\BagianController@hapus_bagian');
+Route::get('/bagian/cari','App\Http\Controllers\BagianController@cari_bagian');
