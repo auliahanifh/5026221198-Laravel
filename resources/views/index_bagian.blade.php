@@ -27,6 +27,7 @@
             <th>Nama</th>
             <th>Jumlah</th>
             <th>Tersedia</th>
+            <th>Opsi</th>
         </tr>
         @foreach($bagian as $b)
         <tr>
