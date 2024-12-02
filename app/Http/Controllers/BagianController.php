@@ -19,10 +19,10 @@ class BagianController extends Controller
 
     public function store_bagian (Request $request) {
         DB::table('bagian')->insert([
-            'kodebagian' => $request->kode,
-            'namabagian' => $request->nama,
-            'jumlahbagian' => $request->jumlah,
-            'tersedia' => $request->tersedia
+            'kodebagian' => $request->Kode,
+            'namabagian' => $request->Nama,
+            'jumlahbagian' => $request->Jumlah,
+            'tersedia' => $request->Tersedia
         ]);
         return redirect('/bagian');
 
@@ -34,11 +34,11 @@ class BagianController extends Controller
     }
 
     public function update_bagian(Request $request){
-        DB::table('bagian')->where('kodebagian',$request->kode)->update([
-            'kodebagian' => $request->kode,
-            'namabagian' => $request->nama,
+        DB::table('bagian')->where('kodebagian',$request->Kode)->update([
+            'kodebagian' => $request->Kode,
+            'namabagian' => $request->Nama,
             'jumlahbagian' => $request->jumlah,
-            'tersedia' => $request->tersedia
+            'tersedia' => $request->Tersedia
         ]);
     return redirect('/bagian');
     }

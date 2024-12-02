@@ -23,10 +23,10 @@
 
     <table class="table table-striped table-hover">
         <tr>
-            <th>kode</th>
-            <th>nama</th>
-            <th>jumlah</th>
-            <th>tersedia</th>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Jumlah</th>
+            <th>Tersedia</th>
         </tr>
         @foreach($bagian as $b)
         <tr>

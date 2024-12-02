@@ -33,7 +33,8 @@
                 <label for="switch" class="col-sm-2 col-form-label"><nav></nav>Tersedia</label>
               </div>
               <div class="col-sm-10">
-                <input type="checkbox" name="tersedia" id="tersedia" required="required"><span class="slider"></span>
+                <input type="checkbox" name="tersediaY" id="tersediaY" required="required"><i>Ya</i><span class="slider"></span>
+                <input type="checkbox" name="tersediaN" id="tersediaN" required="required"><i>Tidak</i><span class="slider"></span>
               </div>
               <div class="row mb-3">
                 <div class="col-sm-12">
