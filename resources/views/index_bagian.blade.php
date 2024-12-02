@@ -34,7 +34,13 @@
             <td>{{ $b->kodebagian }}</td>
             <td>{{ $b->namabagian }}</td>
             <td>{{ $b->jumlahbagian }}</td>
-            <td>{{ $b->tersedia }}</td>
+            <td>
+                @if ($b->tersedia === 'Y')
+                <i class="fa-solid fa-check text-success"></i>
+                @else
+                <i class="fa-solid fa-minus text-danger"></i>
+                @endif
+            </td>
             <td>
                 <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
                 <a href="/bagian/hapus/{{ $b->kodebagian }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
