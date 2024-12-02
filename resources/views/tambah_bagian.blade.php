@@ -12,12 +12,6 @@
 
         <form>
             <div class="row mb-3">
-              <label for="kode" class="col-sm-2 col-form-label"><nav></nav>Kode</label>
-              <div class="col-sm-10">
-                <input type="text" name="kode" class="form-control" id="kode" required="required">
-              </div>
-            </div>
-            <div class="row mb-3">
                 <label for="nama" class="col-sm-2 col-form-label"><nav></nav>Nama</label>
                 <div class="col-sm-10">
                   <input type="text" name="nama" class="form-control" id="nama" required="required">
