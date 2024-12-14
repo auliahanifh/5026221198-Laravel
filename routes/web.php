@@ -70,10 +70,10 @@ Route::post('/pegawai/update','App\Http\Controllers\PegawaiDBController@update')
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiDBController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiDBController@cari');
 
-Route::get('/bagian', 'App\Http\Controllers\BagianController@index_bagian');
-Route::get('/bagian/tambah', 'App\Http\Controllers\BagianController@tambah_bagian');
-Route::post('/bagian/store', 'App\Http\Controllers\BagianController@store_bagian');
-Route::get('/bagian/edit/{kode}', 'App\Http\Controllers\BagianController@edit_bagian');
-Route::post('/bagian/update', 'App\Http\Controllers\BagianController@update_bagian');
-Route::get('/bagian/hapus/{kode}','App\Http\Controllers\BagianController@hapus_bagian');
-Route::get('/bagian/cari','App\Http\Controllers\BagianController@cari_bagian');
+Route::get('/bagian', 'App\Http\Controllers\BagianController@index');
+Route::get('/bagian/add', 'App\Http\Controllers\BagianController@add');
+Route::post('/bagian/store', 'App\Http\Controllers\BagianController@store');
+Route::get('/bagian/edit/{kode}', 'App\Http\Controllers\BagianController@edit');
+Route::post('/bagian/update', 'App\Http\Controllers\BagianController@update');
+Route::get('/bagian/delete/{kode}','App\Http\Controllers\BagianController@delete');
+Route::get('/bagian/cari','App\Http\Controllers\BagianController@search');

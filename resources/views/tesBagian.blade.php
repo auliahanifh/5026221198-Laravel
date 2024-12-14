@@ -3,15 +3,15 @@
 @section('test1', 'Data Bagian')
 
 @section('link1')
-    <a href="/bagian/tambah" class="btn btn-primary"> + Tambah Bagian Baru</a>
+    <a href="/bagian/add" class="btn btn-primary"> + Tambah Bagian Baru</a>
 @endsection
 
 @section('konten')
-	<form action="/bagian/cari" method="GET">
+	<form action="/bagian/search" method="GET">
         <div class="row mb-3">
             <label for="nama" class="col-sm-2 col-form-label"><nav></nav>Cari Bagian</label>
             <div class="col-sm-6">
-              <input type="text" name="cari" class="form-control" id="cari" placeholder="Cari Bagian .." value="{{ old('cari') }}">
+              <input type="text" name="cari" class="form-control" id="cari" placeholder="Cari Bagian .." value="{{ request('search') }}">
             </div>
             <div class="col-sm-4">
                 <input type="submit" value="CARI" class="btn btn-success">
@@ -41,9 +41,9 @@
                 <i class="fa-solid fa-minus text-danger"></i>
                 @endif
             </td>
-            <td>
-                <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
-                <a href="/bagian/hapus/{{ $b->kodebagian }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+            <td class="text-center">
+                <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-warning btn-icon"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="/bagian/delete/{{ $b->kodebagian }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
             </td>
         </tr>
         @endforeach
