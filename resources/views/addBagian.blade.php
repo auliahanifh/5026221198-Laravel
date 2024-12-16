@@ -26,19 +26,13 @@
             <div class="form-group row mb-3">
                 <label for="tersedia" class="col-sm-2 col-form-label">Tersedia</label>
                 <div class="col-sm-10 d-flex align-items-center">
-                    <div class="form-check me-3">
-                        <div class="form-check-input">
-                            <input class="form-check-input" type="radio" name="tersedia" id="tersediaY" value="Y">
-                            <label class="form-check-label" for="tersediaY">
-                            Ya
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="tersedia" id="tersediaN" value="N">
-                            <label class="form-check-label" for="tersediaN">
-                            Tidak
-                            </label>
-                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tersedia" id="tersediaY" value="Y">
+                        <label class="form-check-label" for="tersediaY">Ya</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tersedia" id="tersediaN" value="N">
+                        <label class="form-check-label" for="tersediaN">Tidak</label>
                     </div>
                 </div>
             </div>
