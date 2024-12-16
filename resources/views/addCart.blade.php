@@ -3,7 +3,7 @@
 @section('test1', 'Tambah Keranjang Belanja')
 
 @section('link1')
-<a href="/bagian"> Kembali</a>
+<a href="/cart"> Kembali</a>
 @endsection
 
 @section('konten')
