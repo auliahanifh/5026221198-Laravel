@@ -76,4 +76,12 @@ Route::post('/bagian/store', 'App\Http\Controllers\BagianController@store');
 Route::get('/bagian/edit/{kode}', 'App\Http\Controllers\BagianController@edit');
 Route::post('/bagian/update', 'App\Http\Controllers\BagianController@update');
 Route::get('/bagian/delete/{kode}','App\Http\Controllers\BagianController@delete');
-Route::get('/bagian/cari','App\Http\Controllers\BagianController@search');
+Route::get('/bagian/search','App\Http\Controllers\BagianController@search');
+
+Route::get('/cart', 'App\Http\Controllers\CartController@index');
+Route::get('/cart/add', 'App\Http\Controllers\CartController@add');
+Route::post('/cart/store', 'App\Http\Controllers\CartController@store');
+Route::get('/cart/edit/{kode}', 'App\Http\Controllers\CartController@edit');
+Route::post('/cart/update', 'App\Http\Controllers\CartController@update');
+Route::get('/cart/delete/{kode}','App\Http\Controllers\CartController@delete');
+Route::get('/cart/search','App\Http\Controllers\CartController@search');
