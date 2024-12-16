@@ -41,7 +41,7 @@
                 <i class="fa-solid fa-minus text-danger"></i>
                 @endif
             </td>
-            <td class="text-center">
+            <td class="text-left">
                 <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-warning btn-icon">Edit</a>
                 <a href="/bagian/delete/{{ $b->kodebagian }}" class="btn btn-danger">Hapus</a>
             </td>
