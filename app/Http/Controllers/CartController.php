@@ -41,21 +41,21 @@ class CartController extends Controller
 
     }
 
-    public function edit($id) {
-        $keranjangbelanja = DB::table('keranjangbelanja')->where('id', $id)->get();
+    public function edit($ID) {
+        $keranjangbelanja = DB::table('keranjangbelanja')->where('ID', $ID)->get();
     return view('editCart',['keranjangbelanja' => $keranjangbelanja]);
     }
 
     public function update(Request $request){
-        DB::table('keranjangbelanja')->where('id',$request->id)->update([
+        DB::table('keranjangbelanja')->where('ID',$request->ID)->update([
             'KodeBarang' => $request->KodeBarang,
             'Jumlah' => $request->Jumlah,
             'Harga' => $request->Harga
         ]);
     return redirect('/cart');
     }
-    public function delete($id){
-        DB::table('keranjangbelanja')->where('id',$id)->delete();
+    public function delete($ID){
+        DB::table('keranjangbelanja')->where('ID',$ID)->delete();
 
     return redirect('/cart');
     }
