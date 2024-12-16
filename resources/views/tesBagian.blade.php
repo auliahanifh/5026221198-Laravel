@@ -42,8 +42,8 @@
                 @endif
             </td>
             <td class="text-center">
-                <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-warning btn-icon"><i class="fa-solid fa-pen-to-square"></i></a>
-                <a href="/bagian/delete/{{ $b->kodebagian }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                <a href="/bagian/edit/{{ $b->kodebagian }}" class="btn btn-warning btn-icon">Edit</a>
+                <a href="/bagian/delete/{{ $b->kodebagian }}" class="btn btn-danger">Hapus</a>
             </td>
         </tr>
         @endforeach
