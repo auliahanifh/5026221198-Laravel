@@ -85,3 +85,8 @@ Route::get('/cart/edit/{kode}', 'App\Http\Controllers\CartController@edit');
 Route::post('/cart/update', 'App\Http\Controllers\CartController@update');
 Route::get('/cart/delete/{kode}','App\Http\Controllers\CartController@delete');
 Route::get('/cart/search','App\Http\Controllers\CartController@search');
+
+Route::get('/karyawan', 'App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambah', 'App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store', 'App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapus/{kodepegawai}','App\Http\Controllers\KaryawanController@hapus');

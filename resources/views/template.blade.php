@@ -24,7 +24,7 @@
                 <a class="nav-link" href="http://127.0.0.1:8000/cart">Latihan EAS</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">EAS</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/karyawan">EAS</a>
             </li>
           </ul>
         </div>
