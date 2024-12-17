@@ -19,7 +19,7 @@
     <table class="table table-striped table-hover">
         <tr>
             <th>Kode</th>
-            <th>Nama Lengkap</th>
+            <th>NAMA LENGKAP</th>
             <th>Divisi</th>
             <th>departemen</th>
             <th>Opsi</th>
