@@ -31,7 +31,7 @@
             <td>{{ $k->divisi }}</td>
             <td>{{ $k->departemen }}</td>
             <td>
-                <a href="/karyawan/hapus/{{ $k->kodepegawai }}" class="btn btn-danger">Hapus Record</a>
+                <a href="/karyawan/hapus/{{ $k->kodepegawai }}" class="btn btn-danger">Hapus Data</a>
             </td>
         </tr>
         @endforeach
