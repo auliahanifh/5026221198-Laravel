@@ -26,13 +26,13 @@
             <div class="form-group row mb-3">
                 <label for="divisi" class="col-sm-2 col-form-label">Divisi</label>
                 <div class="col-sm-10">
-                    <input type="text" name="divisi" class="form-control" id="divisi" required="required" placeholder="Isikan Divisi">
+                    <input type="text" name="divisi" class="form-control" id="divisi" required="required" placeholder="Isi Divisi (MAX 5 HURUF)">
                 </div>
             </div>
             <div class="form-group row mb-3">
                 <label for="departemen" class="col-sm-2 col-form-label">Departemen</label>
                 <div class="col-sm-10">
-                    <input type="number" name="departemen" class="form-control" id="departemen" required="required" placeholder="Isikan Departemen">
+                    <input type="number" name="departemen" class="form-control" id="departemen" required="required" placeholder="Isi Departemen">
                 </div>
             </div>
             <center><button type="submit" class="btn btn-primary mt-2">SIMPAN</button></center>

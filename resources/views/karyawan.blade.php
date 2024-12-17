@@ -36,6 +36,6 @@
         </tr>
         @endforeach
     </table>
-    <center><a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a></center>
+    <center><a href="/karyawan/tambah" class="btn btn-primary"> + Tambah Karyawan</a></center>
 </br>
 @endsection
