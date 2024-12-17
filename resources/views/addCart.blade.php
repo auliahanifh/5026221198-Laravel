@@ -28,12 +28,6 @@
                     <input type="number" name="Harga" class="form-control" id="Harga" required="required" placeholder="Isikan Harga">
                 </div>
             </div>
-            <div class="form-group row mb-3">
-                <label for="totalharga" class="col-sm-2 col-form-label">Total Harga</label>
-                <div class="col-sm-10 d-flex align-items-center">
-                    <input type="text" class="form-control" id="totalharga" placeholder="Total Harga" readonly>
-                </div>
-            </div>
             <center><button type="submit" class="btn btn-primary mt-2">Update Data</button></center>
         </form>
 	</form>

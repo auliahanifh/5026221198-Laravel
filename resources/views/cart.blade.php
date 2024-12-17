@@ -36,7 +36,6 @@
             <td>{{ $cart->Jumlah }}</td>
             <td>{{ $cart->Harga }}</td>
             <td>
-                <!-- Calculate Total in PHP (cleaner approach) -->
                 {{ number_format($cart->Jumlah * $cart->Harga, 2) }}
             </td>
             <td class="text-left">
