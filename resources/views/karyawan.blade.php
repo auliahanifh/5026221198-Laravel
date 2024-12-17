@@ -19,9 +19,9 @@
     <table class="table table-striped table-hover">
         <tr>
             <th>Kode</th>
-            <th>NAMALENGKAP</th>
+            <th>Nama Lengkap</th>
             <th>Divisi</th>
-            <th>Departemen</th>
+            <th>departemen</th>
             <th>Opsi</th>
         </tr>
         @foreach($karyawan as $k)
@@ -36,6 +36,6 @@
         </tr>
         @endforeach
     </table>
-    <center><a href="/karyawan/tambah" class="btn btn-primary"> + Tambah Karyawan</a></center>
+    <center><a href="/karyawan/tambah" class="btn btn-primary"> + Tambah Data</a></center>
 </br>
 @endsection
