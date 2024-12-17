@@ -117,7 +117,8 @@
                 <li><a href="http://127.0.0.1:8000/tugas1">pertemuan 5</li>
                 <li><a href="http://127.0.0.1:8000/form">pertemuan 7</li>
                 <li><a href="http://127.0.0.1:8000/pegawai">latihan tabel sql</li>
-                <li><a href="http://127.0.0.1:8000/bagian">latihan akhir</li>
+                <li><a href="http://127.0.0.1:8000/bagian">latihan tabel bagian</li>
+                <li><a href="http://127.0.0.1:8000/karyawan">EAS</li>
             </ul>
             <h2>Services</h2>
             <p>What we do offer</p>
