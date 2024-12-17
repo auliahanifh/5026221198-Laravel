@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="form-group row mb-3">
-                <label for="namalengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                <label for="namalengkap" class="col-sm-2 col-form-label">NAMALENGKAP</label>
                 <div class="col-sm-10">
                   <input type="text" name="namalengkap" class="form-control" id="namalengkap" required="required" placeholder="Isi Nama Lengkap">
                 </div>

@@ -21,7 +21,7 @@
             <th>Kode</th>
             <th>NAMALENGKAP</th>
             <th>Divisi</th>
-            <th>departemen</th>
+            <th>Departemen</th>
             <th>Opsi</th>
         </tr>
         @foreach($karyawan as $k)
